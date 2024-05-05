@@ -1,40 +1,35 @@
-## Getting Started
+# CPSC559 Lottery Game
 
-Create a project using this example:
+Welcome to the CPSC559 Lottery Game project! This project implements a lottery game using Next.js for the front-end and Solidity with thirdweb for the contract backend.
 
-```bash
-npx thirdweb create --template next-typescript-starter
-```
+## Team Members
+1. Anuj Patel
+   - CWID: 885177014
+   - Email: anuj11@csu.fullerton.edu
+2. Purva Surve
+   - CWID: 885168992
+   - Email: purvass@csu.fullerton.edu
+3. Keshav Daga
+   - CWID: 885177477
+   - Email: kd81@csu.fullerton.edu
+4. Kavil Jain
+   - CWID: 885177303
+   - Email: kavil.jain@csu.fullerton.edu
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Project Links
+- Front-end using Next.js: [GitHub Repository](https://github.com/anu581999/CPSC559)
+- Contract Solidity using thirdweb: [GitHub Repository](https://github.com/anu581999/CPSC559_backend)
 
-On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
-
-## Environment Variables
-
-To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
-
-## Deploy to IPFS
-
-Deploy a copy of your application to IPFS using the following command:
-
-```bash
-yarn deploy
-```
-
-## Learn More
-
-To learn more about thirdweb and Next.js, take a look at the following resources:
-
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Templates](https://thirdweb.com/templates)
-
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+## Instructions to Run the Project
+1. Clone the [CPSC559_backend](https://github.com/anu581999/CPSC559_backend) project.
+2. Open the path of the cloned project in the terminal.
+3. Run `npm install` to install all the dependencies of the project.
+4. Run `npx thirdweb@latest deploy` to deploy the contract in thirdweb.
+5. Once the contract is deployed, copy the address of the contract to clipboard.
+6. Clone the [CPSC559](https://github.com/anu581999/CPSC559) project.
+7. Open the path of the cloned project in the terminal.
+8. Run `npm install` to install all the dependencies of the project.
+9. Open `addresses.ts` file located under `const` folder.
+10. Paste the copied contract address in `RAFFLE_CONTRACT_ADDRESS`.
+11. Now run the project using `npm run dev`.
+12. Enjoy the lottery game!
