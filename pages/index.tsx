@@ -47,7 +47,7 @@ const Home: NextPage = () => {
   }
 
   return (
-    <Container maxW={"1440px"} py={8}>
+    <Container bgImage={"images/giphy-1.gif"} opacity={1} maxW={"1440px"} py={8}>
       <SimpleGrid columns={2} spacing={4} minH={"60vh"}>
         <Flex>
           {
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
               <PrizeNFT/>
             ) : (
             <MediaRenderer
-              src={HERO_IMAGE_URL}
+              src={"images/cryptocurrency.png"}
               width="100%"
               height="100%"
             />
@@ -64,10 +64,10 @@ const Home: NextPage = () => {
         <Flex justifyContent={"center"} alignItems={"center"} p={"5%"}>
           <Stack spacing={10}>
             <Box>
-            <Text fontSize={"xl"}>Raffle App</Text>
-            <Text fontSize={"4xl"} fontWeight={"bold"}>Buy a ticket to win the NFT Prize!</Text>
+            <Text fontSize={"xl"}>Lottery DApp</Text>
+            <Text fontSize={"4xl"} fontWeight={"bold"}>Purchase a ticket for the opportunity to win the NFT Prize!</Text>
             </Box>
-            <Text fontSize={"xl"}>Buy entries for a chance to win the NFT! Winner will be selected and transferred the NFT. The more entries the higher chance you have of winning the prize.</Text>
+            <Text fontSize={"xl"}>Buy entries for a shot at claiming the NFT! A winner will be chosen and the NFT transferred to them. The greater the number of entries, the better your chances of winning the prize.</Text>
             <RaffleStatus raffleStatus={raffleStatus} />
             {!isLoadingEntryCost && (
               <Text fontSize={"2xl"} fontWeight={"bold"}> Cost Per Entry: {entryCostInEther} MATIC</Text>

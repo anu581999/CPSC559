@@ -11,7 +11,7 @@ export default function RaffleStatus({ raffleStatus } : Props){
 
     return (
         <Card py={2} textAlign={"center"} backgroundColor={backgroundColor} border={"1px solid"} borderColor={borderColor}>
-            <Text fontWeight={"bold"} color={textColor} fontSize={"sm"}>Raffle Status: {raffleStatus ? "Open" : "Closed"}</Text>
+            <Text fontWeight={"bold"} color={textColor} fontSize={"sm"}>Lottery Status: {raffleStatus ? "Open" : "Closed"}</Text>
         </Card>
     )
 }
