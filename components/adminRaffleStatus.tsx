@@ -22,7 +22,7 @@ export default function AdminRaffleStatus(){
 
     return(
         <Card p={4} mt={4} mr={10} w={"25%"}>
-            <Text fontWeight={"bold"} mb={4} fontSize={"xl"}>Raffle Status:</Text>
+            <Text fontWeight={"bold"} mb={4} fontSize={"xl"}>Lottery Status:</Text>
             <RaffleStatus raffleStatus={raffleStatus} />
             {!raffleStatus ?(
                  <Stack spacing={4} mt={4}>
@@ -54,7 +54,7 @@ export default function AdminRaffleStatus(){
                             ]
                           )}
                           onSuccess={reset}
-                     >Start Raffle</Web3Button>
+                     >Start Lottery</Web3Button>
                  </Stack> 
             ) : (
                  <Stack mt={4}>
@@ -64,7 +64,7 @@ export default function AdminRaffleStatus(){
                             "endRaffle"
                         )}
 
-                    >End Raffle</Web3Button>
+                    >End Lottery</Web3Button>
                  </Stack> 
             )}
             
