@@ -7,7 +7,7 @@ Welcome to the CPSC559 Lottery Game project! This project implements a lottery g
    - CWID: 885177014
    - Email: anuj11@csu.fullerton.edu
 2. Purva Surve
-   - CWID: 885168992
+   - CWID: 885200808
    - Email: purvass@csu.fullerton.edu
 3. Keshav Daga
    - CWID: 885177477
